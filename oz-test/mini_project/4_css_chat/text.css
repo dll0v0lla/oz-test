@@ -1,0 +1,38 @@
+.chat-screen__texts {
+    padding: 0;
+    list-style-type: none;
+}
+
+.chat-screen__texts > .text {
+    background-color: aliceblue;
+    width: auto; /* 너비를 자동으로 조절 */
+    max-width: 280px; /* 최대 너비 설정 */
+    height: auto; /* 높이를 자동으로 조절 */
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 1.5; /* 텍스트 줄 간격 설정 */
+    position: relative;
+    left: 10px;
+    word-wrap: break-word; /* 긴 단어를 줄바꿈 처리 */
+}
+
+.chat-screen__texts > .text::after {
+    content: "";
+    border-right: 16px solid aliceblue;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.chat-screen__texts > .text:hover {
+    background-color: rgb(188, 223, 254);
+    transition: background-color 1500ms 200ms ease-in;
+}
+
+.chat-screen__texts > .text:hover::after {
+    border-right: 16px solid rgb(188, 223, 254);
+    transition: border-right 1500ms 200ms ease-in;
+}
+

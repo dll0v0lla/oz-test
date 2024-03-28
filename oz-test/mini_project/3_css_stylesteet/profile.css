@@ -1,0 +1,77 @@
+body {
+    font-family: 'Orbit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeaf1;
+    padding-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+hr {
+    border: 1px solid #ff5a9c;
+    margin: 20px 9%;
+}
+
+img.profile-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 300px; 
+    height: auto; 
+}
+
+#information, #mistery, img, h1 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#information h3, #mistery h3 {
+    text-align: center;
+    color: #333;
+}
+
+.name, .age, .breed, .reason {
+    margin-bottom: 15px;
+}
+
+.reason {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.reason mark {
+    background-color: #ffecb3;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.advantages {
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #666;
+}
+
+span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #999;
+}
+
+.orbit-regular {
+    font-family: "Orbit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  

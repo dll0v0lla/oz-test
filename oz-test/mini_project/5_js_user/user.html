@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comfortable" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정보 입력받고 출력하기</title>
+    <style>
+        #name{
+            color: rgb(0, 0, 0);
+        }
+        #animal{
+            color: orange;
+        }
+        #froot{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="name"></h1>
+    <p id="animal"></p>
+    <p id="froot"></p>
+
+    <script>
+        document.querySelector("#name")
+        .textContent = `${prompt("당신의 이름은?")}`
+
+        document.querySelector("#animal")
+        .textContent = `좋아하는 동물은 ${prompt("당신이 좋아하는 동물은?")}입니다!`
+
+        document.querySelector("#froot")
+        .textContent = `좋아하는 과일은 ${prompt("당신이 좋아하는 과일은?")}입니다!`
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>짱구에 대한 설문조사</title>
+    <style>
+        .complete {
+            text-align: center;
+        }
+        body, html {
+            height: auto;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 100%;
+            max-width: 1000px;
+        }
+        footer, header{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📝 짱구에 대한 설문조사 📝</h1>
+        <p>\ ꒰⍢꒱ 모든 항목에 빠짐없이 체크해주세요 ꒰⍢꒱ /</p>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">🏷️ 이 &nbsp; 름</label>
+                <input type="text" name="name" id="name" placeholder="본명을 입력하세요" required>
+                <br>
+                <label for="email">📧 이메일</label>
+                <input type="text" name="email" id="email" placeholder="메일 주소를 입력하세요" required>
+                <span>@</span>
+                <select name="mailbox" id="mailbox">
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="kakao.com">kakao.com</option>
+                    <option value="hanmail.com">hanmail.com</option>
+                    <option value="naver.com">naver.com</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>짱구에 대한 질문</legend>
+                
+                <p>1️⃣ 짱구를 얼마나 좋아하십니까? 🤔</p>
+                    <input type="radio" id="verymystar" name="score" value="verymystar">
+                    <label for="verymystar">💜 매우 <s>(내 맘 속에)</s> 별로</label> <br>
+                    <input type="radio" id="mystar" name="score" value="mystar">
+                    <label for="mystar">🩵 <s>(내 맘 속에)</s> 별로</label> <br>
+                    <input type="radio" id="sosogood" name="score" value="sosogood">
+                    <label for="sosogood">💚 그냥 좋아한다</label> <br>
+                    <input type="radio" id="verygood" name="score" value="verygood">
+                    <label for="verygood">💛 많이 좋아한다</label> <br>
+                    <input type="radio" id="love" name="score" value="love">
+                    <label for="love">🩷 사랑한다</label>
+
+                    <p>2️⃣ 짱구 극장판 중 가장 재미있게 보셨던 작품을 골라주세요 🤔</p>
+                    <label for="favorite-movie">선택:</label>
+                    <select name="favorite-movie" id="favorite-movie">
+                        <option value="1">극장판 짱구는 못말려 1기 액션가면 대 그래그래 마왕
+                        <option value="2">극장판 짱구는 못말려 2기 부리부리 왕국의 보물
+                        <option value="3">극장판 짱구는 못말려 3기 흑부리 마왕의 야망
+                        <option value="4">극장판 짱구는 못말려 4기 핸더랜드의 대모험
+                        <option value="5">극장판 짱구는 못말려 5기 암흑 마왕 대추적
+                        <option value="6">극장판 짱구는 못말려 6기 전격! 돼지발굽 대작전
+                        <option value="7">극장판 짱구는 못말려 7기 폭발! 온천 부글부글 대작전
+                        <option value="8">극장판 짱구는 못말려 8기 폭풍을 부르는 정글
+                        <option value="9">극장판 짱구는 못말려 9기 어른제국의 역습
+                        <option value="10">극장판 짱구는 못말려 10기 태풍을 부르는 장엄한 전설의 전투
+                        <option value="11">극장판 짱구는 못말려 11기 태풍을 부르는 영광의 불고기 로드
+                        <option value="12">극장판 짱구는 못말려 12기 폭풍을 부르는 석양의 떡잎마을 방범대
+                        <option value="13">극장판 짱구는 못말려 13기 부리부리 3분 대작전
+                        <option value="14">극장판 짱구는 못말려 14기 전설을 부르는 춤을 춰라! 아미고!
+                        <option value="15">극장판 짱구는 못말려 15기 태풍을 부르는 노래하는 엉덩이 폭탄!
+                        <option value="16">극장판 짱구는 못말려 16기 엄청난 태풍을 부르는 금창의 용사
+                        <option value="17">극장판 짱구는 못말려 17기 포효하라! 떡잎 야생왕국
+                        <option value="18">극장판 짱구는 못말려 18기 초시공! 태풍을 부르는 나의 신부
+                        <option value="19">극장판 짱구는 못말려 19기 태풍을 부르는 황금 스파이 대작전
+                        <option value="20">극장판 짱구는 못말려 20기 태풍을 부르는 나와 우주의 프린세스
+                        <option value="21">극장판 짱구는 못말려 21기 엄청 맛있어! B급 음식 서바이벌!
+                        <option value="22">극장판 짱구는 못말려 22기 정면승부! 로봇아빠의 역습
+                        <option value="23">극장판 짱구는 못말려 23기 나의 이사 이야기 선인장 대습격
+                        <option value="24">극장판 짱구는 못말려 24기 폭풍수면! 꿈꾸는 세계 대돌격
+                        <option value="25">극장판 짱구는 못말려 25기 습격!! 외계인 덩덩이
+                        <option value="26">극장판 짱구는 못말려 26기 아뵤! 쿵후 보이즈 ~라면 대란~
+                        <option value="27">극장판 짱구는 못말려 27기 신혼여행 허리케인~ 사라진 아빠!
+                        <option value="28">극장판 짱구는 못말려 28기 격돌! 낙서왕국과 얼추 네 명의 용사들
+                        <option value="29">극장판 짱구는 못말려 29기 수수께끼! 꽃피는 천하떡잎학교
+                        <option value="30">극장판 짱구는 못말려 30기 동물소환 닌자 배꼽수비대
+                        <option value="31">극장판 짱구는 못말려 31기 신차원! 짱구는 못말려 더 무비: 초능력 대결전 ~날아라 수제김밥~
+                    </select>
+
+                    <p>3️⃣ 가장 좋아하는 짱구 캐릭터는 누구입니까? 🤔</p>
+                    <label for="favorite-character">선택:</label>
+                    <select name="favorite-character" id="favorite-character">
+                        <option value="red">짱구</option>
+                        <option value="pink">유리</option>
+                        <option value="green">훈이</option>
+                        <option value="blue">철수</option>
+                        <option value="yellow">맹구</option>
+                        <option value="other">기타</option>
+                    </select>
+                    
+                    <p>4️⃣ 가장 싫어하는 짱구 캐릭터는 누구입니까? 🤔</p>
+                    <input type="checkbox" id="hate1" name="hate-character" value="hate1">
+                    <label for="hate1">훈 이</label> <br>
+                    <input type="checkbox" id="hate2" name="hate-character" value="hate2">
+                    <label for="hate2">이훈이</label> <br>
+                    <input type="checkbox" id="hate3" name="hate-character" value="hate3">
+                    <label for="hate3">사토 마사오</label> <br>
+                    <input type="checkbox" id="hate4" name="hate-character" value="hate4">
+                    <label for="hate4">주먹밥 머리</label> <br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>짱구에게 하고 싶은 말</legend>
+                <textarea 
+                rows="3" cols="100" name="comment" 
+                placeholder="하고 싶은 말을 자유롭게 작성해주세요."></textarea>
+            </fieldset>
+
+            <br>
+
+            <fieldset class="complete">
+                <legend>작성을 다 하셨나요?</legend>
+                <label for="checkbutton">전부 작성하셨다면 버튼을 클릭해주세요 </label>
+                <input type="submit" value="✅">
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <p>
+            설문조사가 끝나셨습니다!<br>
+            🔔 짱구에 대한 설문조사를 해주셔서 감사합니다 🔔
+        </p> 
+    </footer>
+</body>
+</html>

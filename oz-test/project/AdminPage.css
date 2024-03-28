@@ -1,0 +1,16 @@
+body {
+    font-family: 'Orbit', sans-serif;
+}
+
+#docTitle {
+    font-size: 2rem;
+    color: #333;
+}
+
+#data-table {
+    font-size: 1rem;
+}
+
+.btn {
+    font-family: 'Orbit', sans-serif;
+}

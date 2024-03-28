@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comfortable" content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>채팅방 만들기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="chat.css" rel="stylesheet">
+    <link href="text.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main class="chat-screen">
+            <section class="chat-screen__bar">
+                <div class="user">
+                    <div class="user__column">
+                        <div class="user__pic"></div>
+                    </div>
+                    <div class="user__column">
+                        <p class="user__nick">짱구</p>
+                        <p class="user__count">💁🏻 2</p>
+                    </div>
+                </div>
+            </section>
+            <ul class="chat-screen__texts">
+                
+            </ul>
+        </main>
+        
+        <form class="chat-form">
+            <section class="chat-form__field">
+                <textarea id="messageInput" class="chat-form__msg"></textarea>
+                <input type="submit" value="전송" class="chat-form__bt">
+            </section>
+        </form>
+    </div>
+    <script src="text.js"></script>
+</body>
+</html>

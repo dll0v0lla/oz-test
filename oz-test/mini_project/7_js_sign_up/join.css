@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    width: 40%;
+}
+
+td {
+    width: 90%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: calc(100% - 24px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons input {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+    border: none;
+}
+
+.buttons input[type="reset"] {
+    background-color: #ddd;
+}
+
+.buttons input[type="submit"] {
+    background-color: #8400ff;
+    color: #fff;
+}
+
+.buttons input[type="reset"]:hover {
+    background-color: #ccc;
+}
+
+.buttons input[type="submit"]:hover {
+    background-color: #5d00b4;
+}
